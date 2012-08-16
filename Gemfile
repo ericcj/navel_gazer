@@ -29,7 +29,7 @@ gem 'omniauth-foursquare'
 gem 'omniauth-tumblr'
 gem 'omniauth-lastfm'
 
-gem 'let_me_in', :git => 'git://github.com/ericcj/let_me_in.git'
+gem 'let_me_in', :git => 'git://github.com/ericcj/let_me_in.git', :branch => 'forked_stuff'
 gem 'render_or_redirect', :git => 'git@github.com:becarella/render_or_redirect.git'
 
 gem 'handlebars_wax', :git => 'git@github.com:goggin13/handlebars_wax.git'
