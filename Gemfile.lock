@@ -1,18 +1,19 @@
 GIT
-  remote: git://github.com/becarella/let_me_in.git
-  revision: 53eb88fccbdadbf37fdf8d66d0c349edadb4b739
-  specs:
-    let_me_in (0.0.1)
-      bcrypt-ruby (~> 3.0.0)
-      omniauth-identity
-      rails
-
-GIT
   remote: git://github.com/becarella/omniauth-banters.git
   revision: 9354eb2699995464d56c3b0e115a460ea1ca0098
   specs:
     omniauth-banters (0.2.0)
       omniauth-oauth2 (~> 1.0.0)
+
+GIT
+  remote: git://github.com/ericcj/let_me_in.git
+  revision: e4aa394d935dceb0e4ed4b2ea3f22efecd2b9eb4
+  branch: forked_stuff
+  specs:
+    let_me_in (0.0.1)
+      bcrypt-ruby (~> 3.0.0)
+      omniauth-identity
+      rails
 
 GIT
   remote: git@github.com:becarella/render_or_redirect.git
@@ -97,6 +98,7 @@ GEM
       multi_json (~> 1.0)
     faraday (0.8.0)
       multipart-post (~> 1.1)
+    ffi (1.1.5)
     hashie (1.2.0)
     hbs (0.1.2)
       therubyracer (~> 0.9.4)
@@ -194,8 +196,9 @@ GEM
     treetop (1.4.10)
       polyglot
       polyglot (>= 0.3.1)
-    typhoeus (0.3.3)
-      mime-types
+    typhoeus (0.4.2)
+      ffi (~> 1.0)
+      mime-types (~> 1.18)
     tzinfo (0.3.33)
     uglifier (1.2.4)
       execjs (>= 0.3.0)
