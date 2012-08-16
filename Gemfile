@@ -1,3 +1,9 @@
+# for missing encoding in ancient httpauth gem (transitive dependency)
+if RUBY_VERSION =~ /1.9/
+  Encoding.default_external = Encoding::UTF_8
+  Encoding.default_internal = Encoding::UTF_8
+end
+
 source "http://rubygems.org"
 
 # Declare your gem's dependencies in navel_gazer.gemspec.
@@ -27,7 +33,7 @@ gem 'omniauth-lastfm'
 gem 'let_me_in', :git => 'git://github.com/becarella/let_me_in.git'
 gem 'render_or_redirect', :git => 'git@github.com:becarella/render_or_redirect.git'
 
-gem 'handlebars_wax', :git => 'git@github.com:goggin13/handlebars_wax.git' 
+gem 'handlebars_wax', :git => 'git@github.com:goggin13/handlebars_wax.git'
 gem 'handlebars_assets', :git => 'git@github.com:goggin13/handlebars_assets.git'
 
 group :assets do
